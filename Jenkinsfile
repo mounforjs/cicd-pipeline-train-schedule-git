@@ -1,10 +1,14 @@
 pipeline {
     agent any
+
+    environment {
+        def commitHash = sh(script: 'git rev-parse --short HEAD', returnStdout: true)
+    }
+    
     stages {
         stage('Build') {
             steps {
                 echo 'Running build automation'
-                def commitHash = sh(script: 'git rev-parse --short HEAD', returnStdout: true)
                 echo $commitHash
             }
         }

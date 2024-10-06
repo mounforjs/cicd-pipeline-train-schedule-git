@@ -4,6 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Running build automation'
+                echo $USER
             }
         }
         stage('DeployToProduction') {

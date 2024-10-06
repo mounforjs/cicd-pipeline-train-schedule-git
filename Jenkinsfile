@@ -12,6 +12,11 @@ pipeline {
                 echo "The commit hash is: ${commitHash}"
             }
         }
+		stage('Build Docker Image') {
+            steps {
+            	sh "docker version"
+            }
+        }
         stage('DeployToProduction') {
             when {
                 branch 'master'

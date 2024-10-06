@@ -9,7 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Running build automation'
-                echo "${commitHash}"
+                echo "The commit hash is: ${commitHash}"
             }
         }
         stage('DeployToProduction') {

@@ -1,0 +1,1 @@
+<td><a href="<?php echo asset_url(); ?>"><img src="https://dg7ltaqbp10ai.cloudfront.net/fit-in/1597676096-emailheader.jpg" width="100%" height="auto" alt="WinWinLabs" border="0" /></a></td>

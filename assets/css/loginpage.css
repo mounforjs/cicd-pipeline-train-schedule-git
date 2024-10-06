@@ -1,0 +1,122 @@
+
+#logIn-form, #signUp-form, #resPass-form, #verify-form{
+ 	margin-top:100px;
+}
+
+img{
+	max-width: 100%;
+    height: auto;
+}
+
+
+.form-group {
+    position: relative;
+}
+
+.errormessageclass {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+}
+
+
+.icon-addon {
+    position: relative;
+    color: #555;
+    display: block;
+}
+
+.icon-addon:after,
+.icon-addon:before {
+    display: table;
+    content: " ";
+}
+
+.icon-addon:after {
+    clear: both;
+}
+
+.icon-addon.addon-md .glyphicon,
+.icon-addon .glyphicon, 
+.icon-addon.addon-md .fa,
+.icon-addon .fa {
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    font-size: 14px;
+    width: 20px;
+    margin-left: -2.5px;
+    text-align: center;
+    padding: 10px 0;
+    /*top: 1px*/
+}
+
+.icon-addon.addon-lg .form-control {
+    line-height: 1.33;
+    font-size: 18px;
+    padding: 10px 16px 10px 40px;
+}
+
+
+.icon-addon.addon-lg .fa,
+.icon-addon.addon-lg .glyphicon {
+    font-size: 18px;
+    margin-left: 0;
+    left: 11px;
+    top: 0px;
+}
+
+
+.icon-addon .form-control:focus + .glyphicon,
+.icon-addon:hover .glyphicon,
+.icon-addon .form-control:focus + .fa,
+.icon-addon:hover .fa {
+    color: #2580db;
+}
+
+
+.toggle-password{
+    left:93% !important;
+}
+
+#terms_privacy a, #spacer{
+    padding-left: 5px;
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+    display: block;
+}
+
+#carouselContent {
+    height: 20px;
+}
+
+.wizard-navigation ul {
+    display: none !important;
+}
+
+.badge {
+    color: #fff;
+}
+
+.badge-success {
+    background-color: #28a745;
+
+}
+
+.badge-primary {
+    background-color: #007bff;
+}
+
+.badge-warning {
+    color: #000;
+    background-color: #ffc107;
+}
+
+html, body{
+    padding-right: 0px !important; 
+    position: relative!important;
+}

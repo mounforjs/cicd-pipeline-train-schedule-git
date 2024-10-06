@@ -1,0 +1,35 @@
+{
+  "Maps-for-FUNdraising": {
+    "elemId": "Maps-for-FUNdraising",
+    "options": {
+      "mapId": "485d63568e8b5837",
+      "center": {"lat": 39.7391, "lng": -97.0000},
+      "zoom": 3,
+      "mapTypeId": "satellite",
+      "disableDefaultUI": true,
+      "zoomControl": false, 
+      "scaleControl": false,
+      
+      "mapTypeControl": false,
+      "mapTypeControlOptions": {
+        "style": "google.maps.MapTypeControlStyle.DROPDOWN_MENU",
+        "mapTypeIds": ["roadmap", "terrain", "satellite", "hybrid"],
+      
+        "restriction": {
+            "latLngBounds": {
+              "north": 45.0000,
+              "south": 17.0000,
+              "west": -155.0000,
+              "east": -94.0000
+            },
+            "strictBounds": false
+          }
+        
+        }  
+    },
+    
+    "title": "title from JSON",
+    "ariaLabel": "aria from JSON",
+    "contentString": "<div id='content'><div id='siteNotice'></div><h1 id='firstHeading' class='firstHeading'>Let's Change the World!</h1><div id='bodyContent'><p><b>We are WinWinLabs</b>, <b>for you and others</b>.</p><p><a href='https://winwinlabs.org/games/show/play/Puzzle-Fundraiser-for-WinWinLabs--Win-1K' target='_blank'><b>WinWinLabs Puzzle Game</b></a></p></div></div>"
+  }
+}

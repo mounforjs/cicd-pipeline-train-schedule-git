@@ -1,0 +1,2 @@
+ERROR - 2024-09-25 13:23:45 --> Severity: error --> Exception: syntax error, unexpected 'die' (T_EXIT) /app/application/controllers/Home.php 36
+ERROR - 2024-09-25 13:23:47 --> Severity: error --> Exception: syntax error, unexpected 'die' (T_EXIT) /app/application/controllers/Home.php 36

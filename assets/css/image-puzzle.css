@@ -1,0 +1,16 @@
+﻿
+#canvas {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+    width: 500px;
+    height: 100%;
+}
+
+ #canvas li {
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    float: left;
+}

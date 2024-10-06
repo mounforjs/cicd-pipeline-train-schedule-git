@@ -1,0 +1,1 @@
+[12-Apr-2014 04:32:09 America/Chicago] PHP Warning:  file_get_contents(/public/customers.txt) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in /home3/anjali/public_html/demos/ebookplease/stripe/Step6/db.php on line 17

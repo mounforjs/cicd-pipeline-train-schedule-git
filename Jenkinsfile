@@ -4,6 +4,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Running build automation'
+                GIT_COMMIT_HASH = sh (script: "git log -n 1 --pretty=format:'%H'", returnStdout: true)
+                echo $GIT_COMMIT_HASH
             }
         }
         stage('DeployToProduction') {

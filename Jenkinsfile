@@ -23,7 +23,7 @@ pipeline {
 	stage('Push Docker Image') {
             steps {
             	sh "docker push 078407525056.dkr.ecr.us-west-1.amazonaws.com/aarenasjs/test:${commitHash}"
-		sh "docker docker system prune -af" 
+		sh "docker system prune -af" 
             }
         }
 	    

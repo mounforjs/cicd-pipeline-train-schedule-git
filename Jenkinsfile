@@ -17,12 +17,12 @@ pipeline {
             	sh "docker version"
 		sh "docker build -t aarenasjs/test ."
 		sh "docker tag aarenasjs/test:latest 078407525056.dkr.ecr.us-west-1.amazonaws.com/aarenasjs/test:latest"
-		sh "docker tag aarenasjs/test:latest 078407525056.dkr.ecr.us-west-1.amazonaws.com/aarenasjs/test:${commitHash}"
+		sh "docker tag aarenasjs/test:latest 078407525056.dkr.ecr.us-west-1.amazonaws.com/aarenasjs/test:prod-${commitHash}"
             }
         }
 	stage('Push Docker Image') {
             steps {
-            	sh "docker push 078407525056.dkr.ecr.us-west-1.amazonaws.com/aarenasjs/test:${commitHash}"
+            	sh "docker push 078407525056.dkr.ecr.us-west-1.amazonaws.com/aarenasjs/test:prod-${commitHash}"
 		sh "docker system prune -af" 
             }
         }

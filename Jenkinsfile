@@ -12,9 +12,11 @@ pipeline {
                 echo "The commit hash is: ${commitHash}"
             }
         }
-		stage('Build Docker Image') {
+	stage('Build Docker Image') {
             steps {
             	sh "docker version"
+		sh "docker build aarenasjs/test ."
+		sh "docker tag aarenasjs/test:latest 078407525056.dkr.ecr.us-west-1.amazonaws.com/aarenasjs/test:latest 078407525056.dkr.ecr.us-west-1.amazonaws.com/aarenasjs/test:${commitHash}"
             }
         }
         stage('DeployToProduction') {

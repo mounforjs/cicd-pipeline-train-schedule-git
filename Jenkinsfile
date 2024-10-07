@@ -16,7 +16,8 @@ pipeline {
             steps {
             	sh "docker version"
 		sh "docker build -t aarenasjs/test ."
-		sh "docker tag aarenasjs/test:latest 078407525056.dkr.ecr.us-west-1.amazonaws.com/aarenasjs/test:latest 078407525056.dkr.ecr.us-west-1.amazonaws.com/aarenasjs/test:${commitHash}"
+		sh "docker tag aarenasjs/test:latest 078407525056.dkr.ecr.us-west-1.amazonaws.com/aarenasjs/test:latest"
+		sh "docker tag aarenasjs/test:latest 078407525056.dkr.ecr.us-west-1.amazonaws.com/aarenasjs/test:${commitHash}"
             }
         }
         stage('DeployToProduction') {

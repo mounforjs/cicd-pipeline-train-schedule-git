@@ -26,7 +26,7 @@ pipeline {
 		sh "docker system prune -af" 
             }
         }
-	    
+	
         stage('DeployToProduction') {
             when {
                 branch 'master'

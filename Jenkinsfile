@@ -2,8 +2,7 @@ pipeline {
     agent any
 
     environment {
-        def commitHash = sh(script: 'git rev-parse HEAD', returnStdout: true)
-            commitHash = commitHash.trim() 
+        def commitHash = sh(script: 'git rev-parse HEAD', returnStdout: true).trim()
     }
     
     stages {

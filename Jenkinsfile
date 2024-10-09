@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         def commitHash = sh(script: 'git rev-parse HEAD', returnStdout: true)
-        def commitHash = commitHash.trim() 
+            commitHash = commitHash.trim() 
     }
     
     stages {

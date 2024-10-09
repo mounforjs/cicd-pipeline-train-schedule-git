@@ -33,12 +33,12 @@ pipeline {
         stage('Deploy to K8s') {
           steps{
             script {
-              sh """
+              sh '''
                     sed -i \"s,IMAGE_NAME,078407525056.dkr.ecr.us-west-1.amazonaws.com/aarenasjs/test:prod-${commitHash},g\" k8s/deployment.yml
                     cat k8s/deployment.yml
                     kubectl get pods
                     kubectl apply -f k8s/deployment.yml
-                """
+                '''
             }
           }
         }

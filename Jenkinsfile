@@ -34,7 +34,7 @@ pipeline {
           steps{
             script {
               sh """
-                    sed -i 's/IMAGE_NAME/078407525056.dkr.ecr.us-west-1.amazonaws.com/aarenasjs/test:prod-${commitHash}/' k8s/deployment.yml
+                    sed -i "s/IMAGE_NAME/078407525056.dkr.ecr.us-west-1.amazonaws.com/aarenasjs/test:prod-${commitHash}/" k8s/deployment.yml
                     cat k8s/deployment.yml
                     kubectl get pods
                     kubectl apply -f k8s/deployment.yml
